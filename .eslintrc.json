@@ -5,7 +5,7 @@
     },
     "extends": [
         "plugin:react/recommended",
-        "airbnb",
+        "airbnb-base",
         "airbnb-typescript/base",
         "eslint-config-prettier"
     ],
@@ -29,6 +29,13 @@
         "react/jsx-filename-extension": [2, { "extensions": [".js", ".jsx", ".ts", ".tsx"] }],
         "react/require-default-props": [0, { "forbidDefaultForRequired": true, "ignoreFunctionalComponents": true }],
         "react/react-in-jsx-scope": "off",
-        "prettier/prettier": "error"
+        "import/extensions": [".js", ".mjs", ".jsx", ".ts", ".tsx"],
+        "prettier/prettier": [
+        "error",
+            {
+                "singleQuote": true,
+                "endOfLine": "auto"
+            }
+        ]
     }
 }

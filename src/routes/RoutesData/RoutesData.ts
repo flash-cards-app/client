@@ -1,13 +1,13 @@
-import AdminPanel from "../../pages/AdminRoute/AdminPanel";
+import AdminPanel from "../../pages/AdminPanel/AdminPanel";
 import HomePage from "../../pages/HomePage/HomePage";
 
-interface RouteData {
+export interface RouteData {
     path: string;
     component: React.ElementType;
     index?: boolean;
 }
 
-interface RouteDefinition {
+export interface RouteDefinition {
     [key: string]: RouteData[];
 }
 
